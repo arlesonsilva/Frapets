@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Frapets</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/frapets.css">
+<script src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.ir_para_topo').fadeIn();
+        } else {
+            $('.ir_para_topo').fadeOut();
+        }
+    });
+
+    $('a[href="#top"]').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+  });
+</script>
+
+</head>
+<body>
+<header class="header">
+  <h1 id="topo" class="headland_one-font">
+    <a href="#" title="Frapets">FRAPETS</a>
+  </h1>
+
+  <nav class="topnav">
+    <li class="litopnav"><a href="#home">Home</a></li>
+    <li class="litopnav"><a href="#colunas">Colunas</a></li>
+    <li class="litopnav"><a href="#box">Box</a></li>
+    <li class="litopnav"><a href="#imagem">Imagem</a></li>
+    <li class="litopnav"><a href="#video">Video</a></li>
+    <li class="litopnav"><a href="#tabela">Tabela</a></li>
+    <li class="litopnav"><a href="#cores">Cores</a></li>
+    <li class="litopnav"><a href="#tipografia">Tipografia</a></li>
+    <li class="litopnav"><a href="#cabecalho">Cabeçalho</a></li>
+    <li class="litopnav"><a href="#menu">Menu</a></li>
+  </nav>
+</header>
+
+<div class="content">
+  
+  <div class="row">  
+    <div id="home">
+      <h2>Framework CSS Frapets</h2>
+      <p>Desenvolvido por Arleson Silva e Tiago Maia em 2017, com intuito de facilitar o uso de conteúdo web para stilo de páginas web.</p>
+    </div>  
+  </div>
+  
+  <div class="row">
+    <div id="colunas">  
+      <h2>Colunas</h2>
+      <p>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-1</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-2</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-3</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-4</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-5</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-6</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-7</div>
+        </div>
+        <div class="col col-8 col-4 col-1">
+            <div class="">coluna-8</div>
+        </div>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">  
+    <div id="box">
+      <h2>Box</h2>
+        <div class="col col-2">
+          <div class="nobox">Sem efeito de Box (width is 50% and height is auto).</div>
+        </div>
+        <div class="col col-2">
+          <div class="box">Com efeito de Box (width is also 50% and height is auto).</div>
+        </div>
+      </p>
+    </div>  
+  </div>
+
+  <div class="row">
+    <div id="imagem" class="col col-2">      
+      <h2>Imagem</h2>
+      <p>
+        <div class="polaroid">
+          <img src="img/rock600x400.jpg" alt="Norway" width="100%">
+          <div class="contentimg">
+            <p></p>
+          </div>
+        </div>
+      </p>      
+    </div>
+    <div id="video" class="col col-2">
+      <h2>Video</h2>
+      <p>
+        <video class="video" width="80%" controls>
+          <source src="video/mov_bbb.mp4" type="video/mp4">
+          <source src="video/mov_bbb.ogg" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+      </p>      
+    </div>  
+  </div>
+
+  <div class="row">
+    <h2 id="tabela">Tabela</h2>
+    <div class="col col-1">
+      <div id="table">        
+        <p>Uma tabela responsiva exibirá uma barra de rolagem horizontal se a tela for muito pequena para exibir o conteúdo completo:</p>          
+
+        <div style="overflow-x:auto;">
+          <table class="table">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+            </tr>
+          </table>
+          <br/>
+        </div>
+      </div>        
+    </div>      
+  </div>
+
+  <div class="row">      
+    <div id="cores">
+      <h2>Cores</h2>
+      <p></p>
+      <div class="col col-4 col-1">
+          <img src="img/Goldfish.png" alt="Norway" style="border: 1px solid #d0d0d0; padding: 2px; margin-bottom: 15px;">
+      </div>
+      <div class="col col-8 col-4 col-1" style="margin-bottom: 15px;">
+        <span class="sample" style="background-color:#69D2E7;"></span>
+        <p style="margin: 0px;">#69D2E7</p>
+        <p style="margin: 0px;">Padrao1</p>
+      </div>
+      <div class="col col-8 col-4 col-1" style="margin-bottom: 15px;">
+        <span class="sample" style="background-color:#A7DBD8;"></span>
+        <p style="margin: 0px;">#A7DBD8</p>
+        <p style="margin: 0px;">Padrao2</p>
+      </div>
+      <div class="col col-8 col-4 col-1" style="margin-bottom: 15px;">
+        <span class="sample" style="background-color:#E0E4CC;"></span>
+        <p style="margin: 0px;">#E0E4CC</p>
+        <p style="margin: 0px;">Padrao3</p>
+      </div>
+      <div class="col col-8 col-4 col-1" style="margin-bottom: 15px;">
+        <span class="sample" style="background-color:#F38630;"></span>
+        <p style="margin: 0px;">#F38630</p>
+        <p style="margin: 0px;">Padrao4</p>
+      </div>
+      <div class="col col-8 col-4 col-1" style="margin-bottom: 15px;">
+        <span class="sample" style="background-color:#FA6900;"></span>
+        <p style="margin: 0px;">#FA6900</p>
+        <p style="margin: 0px;">Padrao5</p>
+      </div>
+    </div>      
+  </div>
+
+  <div class="row">
+    <h2 id="tipografia">Tipografia</h2>
+    <br>
+    <div class="col col-4 col-1">
+      <p class="montserrat-font" style="margin: 0px; font-size: 30px;">Montserrat</p>
+    </div>
+    <div class="col col-2 col-1">
+      <p class=".open_sans_condensed-font" style="margin: 0px; font-size: 30px;">Open Sans Condensed</p>
+    </div>
+    <div class="col col-4 col-1">
+      <p class="roboto-font" style="margin: 0px; font-size: 30px;">Roboto</p>
+    </div>
+    <br>
+  </div>
+
+  <div class="row">
+    <h2 id="cabecalho">Cabeçalho</h2>
+    <div class="col col-1" style="margin: 15px 0px 0px 0px;">      
+      <h1 class="montserrat-font">Cabeçalho 1</h1>
+      <h2 class="montserrat-font">Cabeçalho 2</h2>
+      <h3 class="montserrat-font">Cabeçalho 3</h3>
+      <h4 class="montserrat-font">Cabeçalho 4</h4>
+      <h5 class="montserrat-font">Cabeçalho 5</h5>
+      <h6 class="montserrat-font">Cabeçalho 6</h6>        
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Menu</h2>  
+    <br/>  
+    <div class="col col-2" style="margin-bottom: 15px;">
+      <h3 id="menu">Vertical Menu</h3>
+      <nav class="menuvertical">      
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>      
+      </nav>  
+    </div>
+    <div class="col col-2" style="margin-bottom: 15px;">
+      <h3 id="menu">Horizontal Menu</h3>
+      <nav class="menuhorizontal">
+        <li class="limenuhorizontal"><a href="#home">Home</a></li>
+        <li class="limenuhorizontal"><a href="#news">News</a></li>
+        <li class="limenuhorizontal"><a href="#contact">Contact</a></li>
+        <li class="limenuhorizontal"><a href="#about">About</a></li>
+      </nav>
+    </div>
+  </div>
+
+  <a href="#topo" class="ir_para_topo">Voltar ao Topo</a>
+
+</div>
+
+<div class="footer">
+  <p>Frapets© Todos os direitos reservados</p>
+</div>
+
+</body>
+</html>
